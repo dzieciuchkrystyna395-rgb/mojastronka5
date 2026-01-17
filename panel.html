@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Logowania</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .account {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .account img {
+      width: 24px;
+      height: 24px;
+    }
+    nav {
+      background: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 10px 0;
+      width: 80%;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Panel Logowania</h1>
+    <div class="account" onclick="logout()">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" alt="Główeczko" />
+      <span>Wyloguj się</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Witaj!</h2>
+    <p>Zaloguj się lub zarejestruj, aby kontynuować</p>
+    <button onclick="login()">Zaloguj się</button>
+    <button onclick="register()">Zarejestruj się</button>
+  </div>
+
+  <script>
+    function login() {
+      alert('Przycisk Zaloguj się kliknięty');
+    }
+
+    function register() {
+      alert('Przycisk Zarejestruj się kliknięty');
+    }
+
+    function logout() {
+      alert('Wylogowano z konta');
+    }
+  </script>
+
+</body>
+</html>
