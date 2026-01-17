@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moja Strona</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Witaj na mojej stronie</h1>
+    <p>Prosta strona HTML + CSS + JavaScript</p>
+  </header>
+
+  <nav>
+    <a href="#home">Start</a>
+    <a href="#about">O mnie</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="card">
+      <h2>Start</h2>
+      <p>To jest przykładowa strona internetowa. Możesz ją dowolnie edytować.</p>
+      <button onclick="sayHello()">Kliknij mnie</button>
+    </section>
+
+    <section id="about" class="card">
+      <h2>O mnie</h2>
+      <p>Napisz tutaj coś o sobie, firmie lub projekcie.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Kontakt</h2>
+      <p>Email: kontakt@twojastrona.pl</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Moja Strona</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert('Cześć! Dzięki za kliknięcie 🙂');
+    }
+  </script>
+</body>
+</html>
